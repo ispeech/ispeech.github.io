@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
+
 	<div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
@@ -24,6 +25,31 @@
          js.src = "//connect.facebook.net/en_US/all.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    // In your HTML:
+<input type="button" value="Login" onclick="FB.login();">
+<input type="button" value="Logout" onclick="FB.logout();">
+    <script>
+
+
+
+// In your onload method:
+FB.Event.subscribe('auth.login', login_event);
+FB.Event.subscribe('auth.logout', logout_event);
+
+// In your JavaScript code:
+var login_event = function(response) {
+  console.log("login_event");
+  console.log(response.status);
+  console.log(response);
+}
+
+var logout_event = function(response) {
+  console.log("logout_event");
+  console.log(response.status);
+  console.log(response);
+}
+
     </script>
 </body>
 </html>

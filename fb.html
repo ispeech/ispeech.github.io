@@ -23,7 +23,7 @@
       // login status of the person. In this case, we're handling the situation where they
       // have logged in to the app.
       testAPI();
-      document.getElementsByName('logout')[0].onclick = function(){console.log('weq')}
+      document.getElementsByName('logout')[0].onclick = function(){FB.logout();console.log('weq')}
         // In your onload method:
         FB.Event.subscribe('auth.login', login_event);
         FB.Event.subscribe('auth.logout', logout_event);

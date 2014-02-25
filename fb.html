@@ -23,6 +23,7 @@
       // login status of the person. In this case, we're handling the situation where they
       // have logged in to the app.
       testAPI();
+      document.getElementsByName('logout')[0].onclick = function(){console.log('weq')}
     } else if (response.status === 'not_authorized') {
       // In this case, the person is logged into Facebook, but not into the app, so we call
       // FB.login() to prompt them to do so.
@@ -42,7 +43,22 @@
     }
   });
   };
+  // In your onload method:
+  FB.Event.subscribe('auth.login', login_event);
+  FB.Event.subscribe('auth.logout', logout_event);
 
+  // In your JavaScript code:
+  var login_event = function(response) {
+    console.log("login_event");
+    console.log(response.status);
+    console.log(response);
+  }
+
+  var logout_event = function(response) {
+    console.log("logout_event");
+    console.log(response.status);
+    console.log(response);
+  }
   // Load the SDK asynchronously
   (function(d){
    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
@@ -65,6 +81,8 @@
 <!--
   Below we include the Login Button social plugin. This button uses the JavaScript SDK to
   present a graphical Login button that triggers the FB.login() function when clicked. -->
+  <input name="login" type="button" value="Login">
+  <input name="logout" type="button" value="Logout">
 
 <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
 </body>

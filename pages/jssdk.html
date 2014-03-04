@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '582221601854005',
+          status     : true,
+          xfbml      : true
+        });
+      };
+      FB.Event.subscribe('auth.statusChange', auth_status_change_callback);
+      auth_status_change_callback = function  (argument) {
+      	  console.log(response);
+      }
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+	<input type="button" value="Login" onclick="FB.login();">
+	<input type="button" value="Logout" onclick="FB.logout();">
+</body>
+</html>

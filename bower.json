@@ -1,0 +1,17 @@
+{
+  "name": "ispeech",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ispeech/ispeech.github.io",
+  "authors": [
+    "wilson <wilson20120311@gmail.com>"
+  ],
+  "description": "A lecture collection site",
+  "keywords": [
+    "lecture"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}

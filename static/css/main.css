@@ -278,7 +278,12 @@ a {
 }
 
 /* line 189, ../sass/main.scss */
-.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {
+  width: 100% !important;
+}
+
+/* line 190, ../sass/main.scss */
+.fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {
   width: 100% !important;
 }
 
@@ -315,4 +320,200 @@ img {
   margin: 3px 5px 3px 3px;
   width: 35px;
   border-radius: 16px;
+}
+
+/* line 231, ../sass/main.scss */
+.pagination {
+  display: block;
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  /* line 235, ../sass/main.scss */
+  .pagination {
+    top: 52%;
+  }
+}
+/* line 239, ../sass/main.scss */
+.pagination {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 56%;
+  z-index: 5;
+  list-style: none;
+  margin: -216px 0 0;
+  padding: 0;
+}
+
+/* line 249, ../sass/main.scss */
+.pagination {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 56%;
+  z-index: 5;
+  list-style: none;
+  margin: -216px 0 0;
+  padding: 0;
+}
+
+/* line 250, ../sass/main.scss */
+.loaded .pagination {
+  display: block;
+}
+
+/* line 251, ../sass/main.scss */
+.pagination li {
+  padding: 0;
+}
+
+/* line 252, ../sass/main.scss */
+.pagination li a {
+  display: block;
+  height: 36px;
+  outline: none;
+  position: relative;
+  width: 36px;
+  text-decoration: none;
+}
+
+/* line 253, ../sass/main.scss */
+.pagination li a:before {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  content: '';
+  height: 4px;
+  left: 50%;
+  margin: -4px 0 0 -4px;
+  position: absolute;
+  top: 50%;
+  width: 4px;
+}
+
+/* line 254, ../sass/main.scss */
+.pagination li a:hover:before {
+  border-color: #0b2b86;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* line 255, ../sass/main.scss */
+.pagination li a.active:before {
+  border: 0;
+  box-shadow: 0 0;
+  height: 10px;
+  margin: -6px 0 0 -6px;
+  width: 10px;
+}
+
+/* line 256, ../sass/main.scss */
+.pagination li a:after {
+  color: #fff;
+  font-size: 13px;
+  font-family: "Museo Sans 300";
+  line-height: 14px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 35px;
+  text-decoration: none;
+  top: 9px;
+  white-space: nowrap;
+  width: 0;
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+/* line 257, ../sass/main.scss */
+.pagination li a:after {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 258, ../sass/main.scss */
+.pagination li:nth-child(1) a:after {
+  content: 'Home';
+}
+
+/* line 259, ../sass/main.scss */
+.pagination li:nth-child(2) a:after {
+  content: 'What We Do';
+}
+
+/* line 260, ../sass/main.scss */
+.pagination li:nth-child(3) a:after {
+  content: 'Our Services';
+}
+
+/* line 261, ../sass/main.scss */
+.pagination li:nth-child(4) a:after {
+  content: 'Balance Between';
+}
+
+/* line 262, ../sass/main.scss */
+.pagination li:nth-child(5) a:after {
+  content: 'Team Work';
+}
+
+/* line 263, ../sass/main.scss */
+.pagination li:nth-child(6) a:after {
+  content: 'Business Analysis';
+}
+
+/* line 264, ../sass/main.scss */
+.pagination li:nth-child(7) a:after {
+  content: 'User Experience';
+}
+
+/* line 265, ../sass/main.scss */
+.pagination li:nth-child(8) a:after {
+  content: 'Technology Consulting';
+}
+
+/* line 266, ../sass/main.scss */
+.pagination li:nth-child(9) a:after {
+  content: 'Visual Design';
+}
+
+/* line 267, ../sass/main.scss */
+.pagination li:nth-child(10) a:after {
+  content: 'Development';
+}
+
+/* line 268, ../sass/main.scss */
+.pagination li:nth-child(11) a:after {
+  content: 'Quality Assurance';
+}
+
+/* line 269, ../sass/main.scss */
+.pagination li:nth-child(12) a:after {
+  content: 'Support & Evolve';
+}
+
+/* line 270, ../sass/main.scss */
+.pagination li a:hover:after {
+  opacity: 1;
+  overflow: visible;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: opacity 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in, -moz-transform 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in, -o-transform 0.3s ease-in;
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+  width: auto;
+}
+
+/* line 273, ../sass/main.scss */
+.loaded .active #wrapper {
+  opacity: 0;
+  -webkit-transition: all 0.25s 0.05s;
+  -moz-transition: all 0.25s 0.05s;
+  -o-transition: all 0.25s 0.05s;
+  transition: all 0.25s 0.05s;
 }

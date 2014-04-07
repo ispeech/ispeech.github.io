@@ -44,25 +44,23 @@
     </div>
 </div> -->
 <div class="sticky-wrapper">
-<div class="a">
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">ISpeech</a>
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/ispeech/pages/index.php">ISpeech</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+                <a class="navLink navbar-right" href="https://www.facebook.com/jingwei.chen.754?ref=tn_tnmn" title="動態時報" data-gt="{&quot;chrome_nav_item&quot;:&quot;timeline_chrome&quot;}" accesskey="2">
+                <img class="_s0 headerTinymanPhoto _rw img" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t5/1119027_1063520697_1258623415_q.jpg" alt="" id="profile_pic_header_1063520697">
+                <span class="headerTinymanName">Wei Chen</span>
+                </a>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
-            <a class="navLink navbar-right" href="https://www.facebook.com/jingwei.chen.754?ref=tn_tnmn" title="動態時報" data-gt="{&quot;chrome_nav_item&quot;:&quot;timeline_chrome&quot;}" accesskey="2">
-            <img class="_s0 headerTinymanPhoto _rw img" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t5/1119027_1063520697_1258623415_q.jpg" alt="" id="profile_pic_header_1063520697">
-            <span class="headerTinymanName">Wei Chen</span>
-            </a>
-        </div>
-    </div>
-</nav>
-</div>
+    </nav>
 </div>

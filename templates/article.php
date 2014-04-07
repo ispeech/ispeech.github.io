@@ -17,31 +17,10 @@
 
 
 
-
-
-	<?php $this -> insert('component/header') ?>
-	<?php $this -> insert('component/slidr') ?>
-
-
-
-
-
 <?php $this -> end() ?>
 
 <?php $this -> start('javascript') ?>
 <script>
-slidr.create("slidr-inline-dynamic", {
-    transition: "cube",
-    controls: "none"
-}).add("v", ["one", "three", "two", "one"]).auto(3E3, "up");
-slidr.create('slidr-api-demo', {
-    breadcrumbs: true,
-    overflow: true
-}).add('h', ['one', 'two', 'three', 'one'])
-    .add('v', ['five', 'four', 'three', 'five'], 'cube')
-    .start();
-
-
 
 $('.sticky-wrapper').waypoint('sticky');
 

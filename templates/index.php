@@ -5,6 +5,44 @@
 <?php $this -> start('content') ?>
 
 	<div class="mask"></div>
+	<ul class="pagination">
+    <li>
+        <a class="active" href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+    <li>
+        <a href="#"></a>
+    </li>
+</ul>
 
 	<?php $this -> insert('component/header') ?>
 	<?php $this -> insert('component/navbar') ?>

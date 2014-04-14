@@ -1,0 +1,25 @@
+.jumbotron{
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	&:hover{
+		box-shadow: 10px 10px 10px;
+	}
+	.jumbotron-contents{
+		position: relative;
+		color: #FFFFFF;
+		background-color: #EC755E;
+	}
+	.description{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.date{
+		@include position(absolute,17px);
+		label{
+			font-size: 12px;
+		}
+	}
+}
+
+
+

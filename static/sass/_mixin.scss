@@ -1,0 +1,52 @@
+@mixin position($position:absolute,$top:false,$right:false,$bottom:false,$left:false){
+    @if $left {
+        top:$top;
+        right:$right;
+        bottom:$bottom;
+        left:$left;
+        position: $position;
+    }@else if $bottom {
+        top:$top;
+        right:$right;
+        bottom: $bottom;
+        position: $position;
+    }@else if $right {
+        top:$top;
+        right:$right;
+        position: $position;
+    }@else {
+        top:$top;
+        position: $position;
+    }
+}
+
+@mixin min_wh($width,$height){
+    min-width: $width;
+    min-height: $height;
+}
+
+@mixin max_wh($width,$height){
+    max-width: $width;
+    max-height: $height;
+}
+
+@mixin wh($width:false,$height:false){
+    @if $width {
+        width: $width;
+    }
+    @if $height {
+        height: $height;
+    }
+}
+
+@mixin center($width,$height){
+    text-align: center;
+    vertical-align: middle;
+    line-height:$height - 4;
+    /* IE */
+    *font-size:$height * 0.9;
+    *font-family:Arial;
+    @media screen and (-moz-images-in-menus:0) {/* FF */
+        line-height:$height - 2;
+    }
+}

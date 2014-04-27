@@ -43,6 +43,7 @@
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/slidr/slidr.min.js"></script>
         <script src="../bower_components/jquery-waypoints/waypoints.min.js"></script>
+        <script src="http://www.slidesjs.com/js/jquery.slides.min.js"></script>
         <script src="../bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.js"></script>
         <script src="http://www.littleco.com/wp-content/themes/littlecompany/js/bootstrap.min.js?ver=20130926"></script>
     	<script src="http://www.littleco.com/wp-content/themes/littlecompany/js/jquery.validity.min.js?ver=20130926"></script>

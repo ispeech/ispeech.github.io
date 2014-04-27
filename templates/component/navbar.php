@@ -53,7 +53,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/ispeech/pages/index.php">ISpeech</a>
+                <a class="navbar-brand" href="/ispeech/pages/index.php"></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
                 <a class="navLink navbar-right" href="https://www.facebook.com/jingwei.chen.754?ref=tn_tnmn" title="動態時報" data-gt="{&quot;chrome_nav_item&quot;:&quot;timeline_chrome&quot;}" accesskey="2">

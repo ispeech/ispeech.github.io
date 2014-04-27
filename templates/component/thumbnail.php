@@ -24,7 +24,7 @@
                 <label>發佈日期</label>
                 <span class="tag">2014.04.05</span>
             </div>
-            <p><a href="#" class="btn btn-warning" role="button">收藏起來</a> <a href="#" class="btn btn-primary" role="button">詳細閱讀</a></p>
+            <p><a href="#" class="btn btn-warning btn-font" role="button">收藏起來</a> <a href="#" class="btn btn-primary btn-font" role="button">詳細閱讀</a></p>
           </div>
         </div>
       </div>

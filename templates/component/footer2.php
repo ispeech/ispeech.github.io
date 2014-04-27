@@ -37,7 +37,7 @@
               <dd class="nav-item"><a href="#">Conctact Form</a></dd>
             </dl>
           </div>
-          <div class="footer-copyright text-center">Copyright &copy; 2014 Flathemes.All rights reserved.</div>
+          <div class="footer-copyright text-center">Copyright &copy; 2014 createpower. All rights reserved.</div>
         </div>
       </div>
     </div>

@@ -1,0 +1,35 @@
+{
+  "name": "slide",
+  "description": "a generic slider",
+  "version": "0.12.0",
+  "homepage": "https://github.com/firstandthird/slide/",
+  "license": "MIT",
+  "copyright": "First+Third",
+  "main": "dist/slide.bower.js",
+  "dependencies": {
+    "fidel": "~2.2.5",
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "assert": "*",
+    "blanket": "*"
+  },
+  "ignore": [
+    "test",
+    "example",
+    "lib",
+    "Gruntfile.js",
+    "package.json",
+    "grunt"
+  ],
+  "_release": "0.12.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.12.0",
+    "commit": "f61fce22dac94c466af79a27dd1c2bb252a91746"
+  },
+  "_source": "git://github.com/firstandthird/slide.git",
+  "_target": "~0.12.0",
+  "_originalSource": "slide",
+  "_direct": true
+}

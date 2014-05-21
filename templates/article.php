@@ -1,42 +1,32 @@
-<?php $this -> layout('component/layout') ?>
+<?php $this -> layout('component/layout2') ?>
 <?php $this -> title = 'ISPEECH' ?>
 
+<?php $this -> start('CSS') ?>
+<link rel="stylesheet" href="../static/css/article.css">
+<?php $this -> end() ?>
 
 <?php $this -> start('content') ?>
-
-	<div class="mask"></div>
-
-
 
 	<?php $this->insert('component/navbar') ?>
 
 	<div class="container">
+		<?php $this->insert('component/author') ?>
 		<?php $this->insert('component/tab') ?>
-		<?php $this->insert('component/footer') ?>
 	</div>
 
-
+	<?php $this -> insert('component/footer2') ?>
 
 <?php $this -> end() ?>
 
 <?php $this -> start('javascript') ?>
 <script>
 
-$('.sticky-wrapper').waypoint('sticky');
-
-
-var heroImage = $('.hero-image');
-
-$(window).scroll(function() {
-    var $this = $(this);
-    var top = $this.scrollTop();
-    heroImage.css('transform', 'translateY(' + (top/2) + 'px)');
+$(window).on({
+	ready: ISPEECH.event.screenWidth,
+	resize: ISPEECH.event.screenWidth,
+	scroll: ISPEECH.event.scrollEvent
 });
 
-$('#scroll-top').on('click',function(){
-	var top = $(window).height();
-	// $(window).scrollTop(top);
-	$('html,body').animate({scrollTop:top},1000);
-})
+$('.sticky-wrapper').waypoint('sticky');
 </script>
 <?php $this -> end() ?>

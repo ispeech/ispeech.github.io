@@ -12,13 +12,14 @@
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="../bower_components/flat-ui-official/css/flat-ui.css">
-        <link rel="stylesheet" href="http://bchanx.com/static/compiled/demo-slidr.css">
+        <!-- <link rel="stylesheet" href="http://bchanx.com/static/compiled/demo-slidr.css"> -->
 
-        <link rel="stylesheet" href="http://www.littleco.com/wp-content/themes/littlecompany/css/bootstrap-responsive.css">
-        <link rel="stylesheet" href="http://www.littleco.com/wp-content/themes/littlecompany/css/main.css?ver=20130926">
-    	<link rel="stylesheet" href="http://www.littleco.com/wp-content/themes/littlecompany/css/font-awesome.css">
-        <link rel="stylesheet" href="../static/css/main.css">
+        <!-- <link rel="stylesheet" href="http://www.littleco.com/wp-content/themes/littlecompany/css/bootstrap-responsive.css"> -->
+        <!-- <link rel="stylesheet" href="http://www.littleco.com/wp-content/themes/littlecompany/css/main.css?ver=20130926"> -->
+    	<!-- <link rel="stylesheet" href="http://www.littleco.com/wp-content/themes/littlecompany/css/font-awesome.css"> -->
 
+
+        <?=$this->CSS?>
     </head>
 
     <body>

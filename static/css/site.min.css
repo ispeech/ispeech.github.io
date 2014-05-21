@@ -6311,58 +6311,6 @@ a.list-group-item-danger.active, a.list-group-item-danger:focus, a.list-group-it
 .panel-group-lists .panel-title a:active, .panel-group-lists .panel-title a:focus, .panel-group-lists .panel-title a:hover {
     color:#aab2bd
 }
-.footer {
-    padding:40px 0;
-    background-color:#434a54
-}
-.footer-logo, .footer-nav {
-    float:left;
-    padding:0 20px;
-    width:20%
-}
-@media (max-width:768px) {
-    .footer-logo {
-        margin-bottom:20px
-    }
-    .footer-logo, .footer-nav {
-        float:none;
-        display:block;
-        width:100%
-    }
-}
-.footer-logo {
-    margin-top:-5px;
-    height:32px;
-    line-height:32px
-}
-.footer-logo img {
-    margin-right:10px
-}
-.footer-logo a {
-    font-size:20px;
-    font-weight:700;
-    color:#fff
-}
-.footer-logo a:active, .footer-logo a:hover {
-    text-decoration:none
-}
-.footer-nav .nav-title {
-    margin-bottom:15px;
-    color:#e6e9ed
-}
-.footer-nav .nav-item {
-    line-height:28px
-}
-.footer-nav .nav-item>a {
-    color:#aab2bd
-}
-.footer-nav .nav-item>a:active, .footer-nav .nav-item>a:hover {
-    color:#ccd1d9;
-    text-decoration:none
-}
-.footer-copyright {
-    color:#aab2bd
-}
 .dropdown-menu {
     border:none;
     background-color:#434a54

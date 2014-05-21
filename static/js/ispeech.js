@@ -1,5 +1,6 @@
+ var ISPEECH = ISPEECH || {};
+
 (function() {
-    var ISPEECH = ISPEECH || {};
 
     ISPEECH.namespace = function(ns_string) {
         var parts = ns_string.split('.'),
@@ -24,14 +25,72 @@
 
     ISPEECH.namespace('ISPEECH.utils.demo');
 
+    ISPEECH.env = {
+        width: document.documentElement.clientWidth,
+        height: document.documentElement.clientHeight,
+        fixTop: $('.fix-section').offset().top
+    }
 
-    ISPEECH.utils.demo = (function(argument) {
-        var privateNum = 2;
-        return {
-            method: function function_name(argument) {
-                // body...
+    ISPEECH.utils = {
+        demo: (function(argument) {
+            var privateNum = 2;
+            return {
+                method: function function_name(argument) {
+                    // body...
+                }
             }
+            // body...
+        })(),
+
+        calculateFixWidth: function(nowWidth){
+            var width;
+
+            if(nowWidth <= 1170){
+                width = 362;
+            }else{
+                width = 445;
+            }
+
+            return width
         }
-        // body...
-    })()
-})()
+    }
+
+    ISPEECH.event = {
+
+
+        screenWidth: function(){
+            var $win = $(window),
+                $layoutChange = $('.layout-change'),
+                $imgResponsive = $('.img-responsive'),
+                screenWidth = $win.width(),
+                scollbarWidth = 15;
+                mobile = 768 - scollbarWidth,
+                verticalAlignMiddle = ($('.author').height() - $imgResponsive.height())/2;
+
+            if(screenWidth >= mobile){
+                $imgResponsive.css('margin-top',verticalAlignMiddle);
+            }else{
+                $imgResponsive.attr('style','');
+            }
+        },
+
+        scrollEvent: function(){
+
+            var $win = $(window),
+                $fix = $('.fix-section'),
+                maxHeight = document.body.scrollHeight - 1000,
+                screenWidth = $win.width(),
+                scrollY = $win.scrollTop(),
+                minHeight = ISPEECH.env.fixTop - 100;
+
+            if(screenWidth > 980){
+                if(minHeight <= scrollY && scrollY <= maxHeight){
+                    $fix.addClass('fixed').css('width',ISPEECH.utils.calculateFixWidth(screenWidth));
+                }else{
+                    $fix.removeClass('fixed').attr('style','');
+                }
+            }
+
+        }
+    }
+})(this)

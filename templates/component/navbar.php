@@ -53,12 +53,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/ispeech/pages/index.php"></a>
+                <a id="translateLink" class="btn btn-large btn-primary" style="font-size: 2em;">簡體</a>
+                <!-- <a class="navbar-brand" href="/ispeech/pages/index.php"></a> -->
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
                 <a class="navLink navbar-right" href="https://www.facebook.com/jingwei.chen.754?ref=tn_tnmn" title="動態時報" data-gt="{&quot;chrome_nav_item&quot;:&quot;timeline_chrome&quot;}" accesskey="2">
-                <img class="_s0 headerTinymanPhoto _rw img" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t5/1119027_1063520697_1258623415_q.jpg" alt="" id="profile_pic_header_1063520697">
-                <span class="headerTinymanName">Wei Chen</span>
+                    <img class="_s0 headerTinymanPhoto _rw img" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t5/1119027_1063520697_1258623415_q.jpg" alt="" id="profile_pic_header_1063520697">
+                    <span class="headerTinymanName">Wei Chen</span>
                 </a>
             </div>
         </div>

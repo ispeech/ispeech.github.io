@@ -302,6 +302,51 @@ img {
   overflow: hidden;
 }
 
+/* line 2, ../sass/component/_navbar.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 6, ../sass/component/_navbar.scss */
+.navbar .navLink {
+  color: #d8dfea;
+  display: inline-block;
+  font-weight: bold;
+  height: 31px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
+  line-height: 53px;
+}
+
+/* line 19, ../sass/component/_navbar.scss */
+.navbar {
+  -moz-box-shadow: 0px 1px 3px rgba(51, 51, 102, 0.5);
+  -webkit-box-shadow: 0px 1px 3px rgba(51, 51, 102, 0.5);
+  box-shadow: 0px 1px 3px rgba(51, 51, 102, 0.5);
+  background: url(http://subtlepatterns.com/patterns/diagmonds.png);
+}
+
+/* line 27, ../sass/component/_navbar.scss */
+.headerTinymanPhoto {
+  border: 1px solid #294a8f;
+  border-top: 1px solid #123682;
+  -webkit-border-radius: 2px;
+  height: 35px;
+  margin: 3px 5px 3px 3px;
+  width: 35px;
+  border-radius: 16px;
+}
+
+/* line 37, ../sass/component/_navbar.scss */
+.loaded .active #wrapper {
+  opacity: 0;
+  -webkit-transition: all 0.25s 0.05s;
+  -moz-transition: all 0.25s 0.05s;
+  -o-transition: all 0.25s 0.05s;
+  transition: all 0.25s 0.05s;
+}
+
 /* line 1, ../sass/component/_footer.scss */
 .footer {
   background: url("http://subtlepatterns.com/patterns/congruent_outline.png");
@@ -398,6 +443,63 @@ img {
   color: #aab2bd;
 }
 
+/* line 1, ../sass/component/_author.scss */
+.author {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin: 30px 15px;
+}
+/* line 8, ../sass/component/_author.scss */
+.author:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 13, ../sass/component/_author.scss */
+.author ul {
+  float: left;
+  padding: 2em;
+  color: #636363;
+}
+/* line 19, ../sass/component/_author.scss */
+.author img {
+  float: left;
+  max-height: 100%;
+}
+/* line 24, ../sass/component/_author.scss */
+.author label {
+  color: #333333;
+}
+/* line 27, ../sass/component/_author.scss */
+.author p {
+  font-size: .8em;
+  line-height: 1.6em;
+}
+
+@media (max-width: 768px) {
+  /* line 34, ../sass/component/_author.scss */
+  .img-responsive {
+    margin-top: 15px;
+  }
+
+  /* line 37, ../sass/component/_author.scss */
+  .container {
+    padding: 0;
+  }
+
+  /* line 40, ../sass/component/_author.scss */
+  .author ul {
+    padding: .5em;
+  }
+
+  /* line 43, ../sass/component/_author.scss */
+  #myTabContent {
+    font-size: 1.5em;
+  }
+}
 /* line 61, ../../../../../../../Users/wilson/Downloads/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 100%;
@@ -410,138 +512,135 @@ html {
 }
 
 /*------------------------------------*\
-    CSS
+    FB like
 \*------------------------------------*/
-/* line 33, ../sass/nindex.scss */
-.name {
-  text-align: center;
-  font-size: 50px;
-}
-
-/* line 37, ../sass/nindex.scss */
-.logo {
-  width: 100px;
-  height: 50px;
-  line-height: 50px;
-  background-color: #C73E3E;
-  position: absolute;
-  color: #ffffff;
-  top: 50px;
-  left: 50px;
-  font-size: 20px;
-  z-index: 999;
-  text-align: center;
-  cursor: pointer;
-}
-/* line 49, ../sass/nindex.scss */
-.logo:hover {
-  background-color: #B33838;
-}
-
-/* line 54, ../sass/nindex.scss */
-.btn-font {
-  color: #000000;
-  font-weight: bolder;
-}
-
-/* line 66, ../sass/nindex.scss */
-.full-width {
-  height: 100%;
-}
-
-/* line 70, ../sass/nindex.scss */
-.text-slide {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  color: #E6C580;
-}
-
-/* line 77, ../sass/nindex.scss */
-#slidr-inline-dynamic {
-  color: #ffffff;
-}
-
-/* line 81, ../sass/nindex.scss */
-.story-cover-arrow {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  margin-left: -8px;
-  border: 2px solid rgba(255, 255, 255, 0.35);
-  background: rgba(0, 0, 0, 0);
-  border-left: 0;
-  border-top: 0;
-  outline: 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  cursor: pointer;
-}
-/* line 101, ../sass/nindex.scss */
-.story-cover-arrow:hover {
-  border-color: rgba(255, 255, 255, 0.65);
-}
-
-/* line 106, ../sass/nindex.scss */
-.navbar-inner {
-  background-color: #F1CA77;
-}
-
-/* line 109, ../sass/nindex.scss */
-.navbar-shadow {
-  background-color: #F1CA77;
-}
-
-/* line 112, ../sass/nindex.scss */
-.height {
-  position: absolute;
-  background: url("http://www.soyuzcoffee.com/img/intro.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-
-/* line 124, ../sass/nindex.scss */
-.thumbnail p {
-  color: #636363;
-  font-size: .8em;
-  line-height: 1.6em;
-}
-/* line 129, ../sass/nindex.scss */
-.thumbnail div {
+/* line 32, ../sass/article.scss */
+.fb-like-box {
   margin: 1em 0;
 }
 
-/* line 135, ../sass/nindex.scss */
-.jumbotron-contents p {
-  color: #636363;
+/* line 35, ../sass/article.scss */
+.fb-facepile {
+  margin: 0 .1em 2em 0;
 }
 
-/* line 140, ../sass/nindex.scss */
-.caption p {
-  color: #636363;
+/* line 38, ../sass/article.scss */
+.fb-like {
+  margin: 2em 0;
 }
 
 /*------------------------------------*\
-    media
+    article fix
 \*------------------------------------*/
-@media (max-width: 768px) {
-  /* line 150, ../sass/nindex.scss */
-  .container {
-    padding: 0;
-  }
+/* line 44, ../sass/article.scss */
+#myTab {
+  background-color: #BEBEBE;
+  overflow: hidden;
+}
 
-  /* line 154, ../sass/nindex.scss */
-  #title {
-    font-size: 1em;
-  }
+/* line 48, ../sass/article.scss */
+.right {
+  float: right;
+}
+
+/* line 52, ../sass/article.scss */
+.nav-tabs li {
+  border-left: 1px solid #FFFFFF;
+}
+/* line 55, ../sass/article.scss */
+.nav-tabs li a {
+  color: #fff;
+  text-align: center;
+}
+/* line 59, ../sass/article.scss */
+.nav-tabs li:nth-child(odd) {
+  width: 30%;
+}
+/* line 62, ../sass/article.scss */
+.nav-tabs li:nth-child(even) {
+  width: 40%;
+}
+
+/* line 70, ../sass/article.scss */
+.tab-content {
+  font-size: 2em;
+  background-color: #ffffff;
+}
+/* line 74, ../sass/article.scss */
+.tab-content h1 {
+  font-size: 1em;
+  margin: 0.67em 0;
+}
+/* line 75, ../sass/article.scss */
+.tab-content h2 {
+  font-size: .8em;
+  margin: 0.75em 0;
+}
+/* line 76, ../sass/article.scss */
+.tab-content h3 {
+  font-size: .6em;
+  margin: 0.83em 0;
+}
+/* line 77, ../sass/article.scss */
+.tab-content h5 {
+  font-size: .4em;
+  margin: 1.5em 0;
+}
+/* line 78, ../sass/article.scss */
+.tab-content h6 {
+  font-size: .2em;
+  margin: 1.67em 0;
+}
+/* line 79, ../sass/article.scss */
+.tab-content h1, .tab-content h2, .tab-content h3, .tab-content h4, .tab-content h5, .tab-content h6 {
+  font-weight: bolder;
+}
+/* line 81, ../sass/article.scss */
+.tab-content p {
+  line-height: 2em;
+  color: #333;
+  margin: 2em 0;
+}
+/* line 86, ../sass/article.scss */
+.tab-content .mix {
+  color: #9D9E9E;
+}
+
+/* line 91, ../sass/article.scss */
+.disqus_thread {
+  margin: 2em 0;
+}
+
+/*------------------------------------*\
+    Youtube fix
+\*------------------------------------*/
+/* line 101, ../sass/article.scss */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 112, ../sass/article.scss */
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 119, ../sass/article.scss */
+.fixed {
+  position: fixed;
+  top: 100px;
+}
+
+/* line 123, ../sass/article.scss */
+.fb-like-box {
+  background-color: #fff;
 }

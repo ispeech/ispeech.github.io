@@ -1,4 +1,11 @@
 /*------------------------------------*\
+    Global variable
+\*------------------------------------*/
+
+$aColor: #636363;
+$bColor: #333333;
+
+/*------------------------------------*\
     BASIC
 \*------------------------------------*/
 
@@ -12,10 +19,16 @@ h1{
     @include leader(1);
     @include trailer(3/4);
 }
+
 p{
     @include adjust-font-size-to(10px);
 }
+
 a{
     @include adjust-font-size-to(12px);
 }
 
+body{
+    background: url(http://subtlepatterns.com/patterns/giftly.png);
+    font-family: Helvetica, 'Heiti TC', 'Segoe UI', 微軟正黑體;
+}

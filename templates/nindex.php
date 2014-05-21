@@ -1,6 +1,9 @@
 <?php $this -> layout('component/layout2') ?>
 <?php $this -> title = 'ISPEECH' ?>
 
+<?php $this -> start('CSS') ?>
+<link rel="stylesheet" href="../static/css/nindex.css">
+<?php $this -> end() ?>
 
 <?php $this -> start('content') ?>
 
@@ -25,8 +28,6 @@
 
         <?php $this -> insert('component/tagcloud') ?>
 
-        <?php $this -> insert('component/tagcloud') ?>
-
         <?php $this -> insert('component/Jumbotron') ?>
 
         <?php $this -> insert('component/search') ?>
@@ -34,8 +35,22 @@
         <?php $this -> insert('component/thumbnail') ?>
 
 
-
-
+        <div class="row">
+        <div class="pagination">
+            <ul>
+              <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+              <li class="active"><a href="#fakelink">1</a></li>
+              <li><a href="#fakelink">2</a></li>
+              <li><a href="#fakelink">3</a></li>
+              <li><a href="#fakelink">4</a></li>
+              <li><a href="#fakelink">5</a></li>
+              <li><a href="#fakelink">6</a></li>
+              <li><a href="#fakelink">7</a></li>
+              <li><a href="#fakelink">8</a></li>
+              <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+            </ul>
+        </div>
+        </div>
 
     </div>
     <?php $this -> insert('component/footer2') ?>
@@ -53,9 +68,14 @@ $('#logo').on('click',function(){
     $('html,body').animate({scrollTop:top},1000);
 });
 
+$('#slides img').css({
+    width: $(window).width(),
+    height: $(window).height()
+});
+
 $("#slides").slidesjs({
-        width: screen.width,
-        height: screen.height - 100,
+        width: $(window).width(),
+        height: $(window).height(),
         navigation: false,
         start: 1,
         play: {

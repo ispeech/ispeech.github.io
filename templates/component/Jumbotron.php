@@ -17,12 +17,12 @@
 
                     <div class="keyword p">
                         <label>關鍵字</label>
-                        <p class="tag">太陽花、學運、大腸花、林飛凡、馬卡茸</p>
+                        <p>太陽花、學運、大腸花、林飛凡、馬卡茸</p>
                     </div>
 
-                    <div class="dat ">
+                    <div class="date">
                         <label>發佈日期</label>
-                        <span class="tag">2014.04.05</span>
+                        <span>2014.04.05</span>
                     </div>
 <a href="#" class="btn btn-warning btn-font" role="button">收藏起來</a> <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
                 </div>
@@ -39,12 +39,12 @@
 
                     <div class="keyword">
                         <label>關鍵字</label>
-                        <p class="tag">太陽花、學運、大腸花、林飛凡、馬卡茸</p>
+                        <p>太陽花、學運、大腸花、林飛凡、馬卡茸</p>
                     </div>
 
                     <div class="date">
                         <label>發佈日期</label>
-                        <span class="tag">2014.04.05</span>
+                        <span>2014.04.05</span>
                     </div>
 <a href="#" class="btn btn-warning btn-font" role="button">收藏起來</a> <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
                 </div>
@@ -91,12 +91,12 @@
 
                     <div class="keyword">
                         <label>關鍵字</label>
-                        <p class="tag">太陽花、學運、大腸花、林飛凡、馬卡茸</p>
+                        <p>太陽花、學運、大腸花、林飛凡、馬卡茸</p>
                     </div>
 
                     <div class="date">
                         <label>發佈日期</label>
-                        <span class="tag">2014.04.05</span>
+                        <span>2014.04.05</span>
                     </div>
 <a href="#" class="btn btn-warning btn-font" role="button">收藏起來</a> <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
                 </div>

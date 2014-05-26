@@ -19,10 +19,11 @@ $base-line-height: 24px;
 @import "component/header";
 @import "component/search";
 @import "component/navbar";
-// @import "component/jumbotron";
-// @import "component/thumbnail";
+@import "component/jumbotron";
+@import "component/thumbnail";
 @import "component/slide";
 @import "component/footer";
+@import "component/pagination";
 
 @include establish-baseline();
 
@@ -34,22 +35,16 @@ $base-line-height: 24px;
     text-align: center;
     font-size: 50px;
 }
-.logo{
-    @include wh(100px,50px);
-    line-height: 50px;
-    background-color: #C73E3E;
-    position: absolute;
-    color: #ffffff;
-    top: 50px;
-    left: 50px;
-    font-size: 20px;
-    z-index: 999;
-    text-align: center;
+
+
+
+.click-menu{
+    top: 10px;
+    font-size: 2em;
+    color:#ffffff;
     cursor: pointer;
-    &:hover{
-        background-color: #B33838;
-    }
 }
+
 //btn font
     .btn-font{
         color: #000000;
@@ -119,7 +114,32 @@ background-size: cover;
 background-position: center;
 }
 
-
+.tag{
+    padding: 15px;
+    &:after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+    a{
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        background: #f0f0f0;
+        padding: 1px 12px;
+        height: 1.8em;
+        line-height: 1.8em;
+        display: block;
+        color: #999;
+        float: left;
+        font-size: 1em;
+        margin: 10px;
+        &:hover{
+            background: #ff0000;
+            color: #fff;
+        }
+    }
+}
 .thumbnail{
     p{
         color: $aColor;

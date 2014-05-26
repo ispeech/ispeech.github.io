@@ -4,7 +4,10 @@
 
 $aColor: #636363;
 $bColor: #333333;
+$body_color:#ebe8d7;
+$body_bg:'http://subtlepatterns.com/patterns/giftly.png';
 
+$side_body_bg:'http://subtlepatterns.com/patterns/grey_wash_wall.png';
 /*------------------------------------*\
     BASIC
 \*------------------------------------*/
@@ -29,6 +32,9 @@ a{
 }
 
 body{
-    background: url(http://subtlepatterns.com/patterns/giftly.png);
     font-family: Helvetica, 'Heiti TC', 'Segoe UI', 微軟正黑體;
+}
+
+.container-top{
+	padding-top: 70px;
 }

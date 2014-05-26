@@ -830,6 +830,23 @@ img {
     font-size: 1.5em;
   }
 }
+/* line 1, ../sass/component/_menu.scss */
+.menu {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 500;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  z-index: 10000;
+  position: fixed;
+  display: block;
+  width: 250px;
+  overflow-y: auto;
+  -webkit-transform: translate(0px, 0px);
+  top: 0px;
+  right: -250px;
+  height: 100%;
+}
+
 /* line 61, ../../../../../../../Users/wilson/Downloads/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 100%;
@@ -844,137 +861,3 @@ html {
 /*------------------------------------*\
     FB like
 \*------------------------------------*/
-/* line 34, ../sass/article.scss */
-.fb-like-box {
-  margin: 1em 0;
-}
-
-/* line 37, ../sass/article.scss */
-.fb-facepile {
-  margin: 0 .1em 2em 0;
-}
-
-/* line 40, ../sass/article.scss */
-.fb-like {
-  margin: 2em 0;
-}
-
-/*------------------------------------*\
-    article fix
-\*------------------------------------*/
-/* line 46, ../sass/article.scss */
-#myTab {
-  background-color: #BEBEBE;
-  overflow: hidden;
-}
-
-/* line 50, ../sass/article.scss */
-.right {
-  float: right;
-}
-
-/* line 54, ../sass/article.scss */
-.nav-tabs li {
-  border-left: 1px solid #FFFFFF;
-}
-/* line 57, ../sass/article.scss */
-.nav-tabs li a {
-  color: #fff;
-  text-align: center;
-}
-/* line 60, ../sass/article.scss */
-.nav-tabs li a:hover {
-  background-color: #9CB8E2;
-}
-/* line 64, ../sass/article.scss */
-.nav-tabs li:nth-child(odd) {
-  width: 30%;
-}
-/* line 67, ../sass/article.scss */
-.nav-tabs li:nth-child(even) {
-  width: 40%;
-}
-
-/* line 75, ../sass/article.scss */
-.tab-content {
-  font-size: 2em;
-  background-color: #ffffff;
-}
-/* line 79, ../sass/article.scss */
-.tab-content h1 {
-  font-size: 1em;
-  margin: 0.67em 0;
-}
-/* line 80, ../sass/article.scss */
-.tab-content h2 {
-  font-size: .8em;
-  margin: 0.75em 0;
-}
-/* line 81, ../sass/article.scss */
-.tab-content h3 {
-  font-size: .6em;
-  margin: 0.83em 0;
-}
-/* line 82, ../sass/article.scss */
-.tab-content h5 {
-  font-size: .4em;
-  margin: 1.5em 0;
-}
-/* line 83, ../sass/article.scss */
-.tab-content h6 {
-  font-size: .2em;
-  margin: 1.67em 0;
-}
-/* line 84, ../sass/article.scss */
-.tab-content h1, .tab-content h2, .tab-content h3, .tab-content h4, .tab-content h5, .tab-content h6 {
-  font-weight: bolder;
-}
-/* line 86, ../sass/article.scss */
-.tab-content p {
-  line-height: 2em;
-  color: #333;
-  margin: 2em 0;
-}
-/* line 91, ../sass/article.scss */
-.tab-content .mix {
-  color: #9D9E9E;
-}
-
-/* line 96, ../sass/article.scss */
-.disqus_thread {
-  margin: 2em 0;
-}
-
-/*------------------------------------*\
-    Youtube fix
-\*------------------------------------*/
-/* line 106, ../sass/article.scss */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-/* line 117, ../sass/article.scss */
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 124, ../sass/article.scss */
-.fixed {
-  position: fixed;
-  top: 100px;
-}
-
-/* line 128, ../sass/article.scss */
-.fb-like-box {
-  background-color: #fff;
-}

@@ -1,6 +1,5 @@
 
 <!-- Footer================================================= -->
-<div class="example">
   <div class="row">
     <div class="col-md-12">
       <div class="footer">
@@ -23,9 +22,9 @@
               <dd class="nav-item"><a href="mailto:wilson20120311@gmail.com">有任何問題都歡迎與我們聊聊！</a></dd>
             </dl>
           </div>
-          <div class="footer-copyright text-center">Copyright &copy; 2014 CreatePower.<span>All rights reserved.</span></div>
+          <div class="footer-copyright text-center">Copyright &copy; 2014 CreatePower. <span>All Rights Reserved.</span></div>
+          <!-- <div class="footer-copyright text-center">Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2014 CreatePower.<span>All rights reserved.</span></div> -->
         </div>
       </div>
     </div>
   </div>
-</div>

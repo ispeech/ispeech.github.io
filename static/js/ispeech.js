@@ -28,7 +28,11 @@
     ISPEECH.env = {
         width: document.documentElement.clientWidth,
         height: document.documentElement.clientHeight,
-        fixTop: $('.fix-section').offset().top
+        fixTop: $('.fix-section') ? 0 : $('.fix-section').offset().top,
+        login: {
+            status: true,
+            userName: 'Wei Chen'
+        }
     }
 
     ISPEECH.utils = {
@@ -91,6 +95,28 @@
                 }
             }
 
+        },
+
+        clickMenu: function(){
+            $('.menu').toggle()
         }
+
     }
+
 })(this)
+
+$('#show_side_menu,.navbar-toggle').on('click',function(){
+    $('body').addClass("sidemenu_visible");
+});
+
+$('#sidenav_close,.container').on('click',function(){
+    $('body').removeClass("sidemenu_visible");
+});
+
+$('.sticky-wrapper').waypoint('sticky');
+
+$(window).on({
+    ready: ISPEECH.event.screenWidth,
+    resize: ISPEECH.event.screenWidth,
+    scroll: ISPEECH.event.scrollEvent
+});

@@ -1,43 +1,179 @@
-//navbar
-img{
-    vertical-align: middle;
+//search
+    @media only screen and (max-width: 600px) {
+        .main .search-box {
+            float: none;
+            width: 100%;
+            margin-bottom: -110px;
+            margin-top: 70px;
+        }
+    }
+
+    .search-box {
+        // float: right;
+        margin: 0 auto;
+        width: 80%;
+        height: 40px;
+        position: relative;
+        // background-color: #ffffff;
+    }
+
+    .search-box input:focus ~ .icon {
+        opacity: 1;
+        z-index: 3;
+        color: #61c7b3;
+        }
+    .search-box input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        text-indent: 15px;
+        height: 40px;
+        z-index: 2;
+        outline: none;
+        color: #ffffff;
+        background: transparent;
+        // border: 2px solid #efefef;
+        border-radius: 5px;
+        background-color: #ffffff;
+        transition-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
+    }
+    .search-box input:focus {
+        color: #333;
+        border-color: #d6d6d6;
+        // width: 300%;
+        background-color: #ffffff;
+    }
+    .search-box .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40px;
+        text-align: center;
+        line-height: 40px;
+        z-index: 1;
+        cursor: pointer;
+        opacity: .5;
+    }
+    .search-box input, .search-box .icon {
+        transition-duration: .3s;
+    }
+
+.tab-content{
+padding: 25px;
+text-align: justify;
+
+}
+//
+
+.slogan{
+	position: absolute;
+	font-size: 1em;
+	top: 10px;
+	left: 130px;
+	color:#ffffff;
 }
 
-.navbar .navLink{
-color: #d8dfea;
-display: inline-block;
-font-weight: bold;
-height: 31px;
-// line-height: 29px;
-position: relative;
-text-decoration: none;
-vertical-align: top;
-line-height: 53px;
+.side_menu {
+
+	color:#fff;
+	position: fixed;
+	z-index: 8;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	width: 0;
+	overflow: visible;
 
 }
+.side_body{
+	div{
+		padding: 1em;
+	}
+background: #424447 url($side_body_bg);
+box-shadow: -20px 0px 10px -20px rgba(0, 0, 0, 0.6) inset;
 
+
+  -webkit-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -o-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -webkit-transform: translateX(-277px);
+  -moz-transform: translateX(-277px);
+  -ms-transform: translateX(-277px);
+  -o-transform: translateX(-277px);
+  transform: translateX(-277px);
+  position: relative;
+  z-index: 2;
+  overflow: auto;
+  height: 100%;
+  width: 277px;
+}
+.main {
+	background: #ebe8d7 url($body_bg);
+	overflow: auto;
+  -webkit-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -o-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
 .navbar{
-    -moz-box-shadow:0px 1px 3px rgba(20%,20%,40%,0.5);
--webkit-box-shadow:0px 1px 3px rgba(20%,20%,40%,0.5);
-box-shadow:0px 1px 3px rgba(20%,20%,40%,0.5);
-background: url(http://subtlepatterns.com/patterns/diagmonds.png);
+	  -webkit-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -o-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
 }
-
-
-.headerTinymanPhoto {
-border: 1px solid #294a8f;
-border-top: 1px solid #123682;
--webkit-border-radius: 2px;
-height: 35px;
-margin: 3px 5px 3px 3px;
-width: 35px;
-border-radius: 16px;
+.sidemenu_visible{
+	.side_body {
+	  -webkit-transform: translateX(0);
+	  -moz-transform: translateX(0);
+	  -ms-transform: translateX(0);
+	  -o-transform: translateX(0);
+	  transform: translateX(100);
+	}
+	.main,.navbar {
+	  -webkit-transform: translateX(277px);
+	  -moz-transform: translateX(277px);
+	  -ms-transform: translateX(277px);
+	  -o-transform: translateX(277px);
+	  transform: translateX(277px);
+	}
 }
-
-.loaded .active #wrapper {
-    opacity: 0;
-    -webkit-transition: all 0.25s 0.05s;
-    -moz-transition: all 0.25s 0.05s;
-    -o-transition: all 0.25s 0.05s;
-    transition: all 0.25s 0.05s;
+#sidenav_close {
+background: url("http://www.bevisionare.com/img/close.png") no-repeat center;
+cursor: pointer;
+margin: 5px;
+float: right;
+height: 30px;
+width: 30px;
+}
+.side_logo{
+	font-family: -webkit-pictograph;
+	color: #ffffff;
+	font-size: 2em;
+	line-height: 2em;
+	text-align: center;
+	// margin:1em;
 }

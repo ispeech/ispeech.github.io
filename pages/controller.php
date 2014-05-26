@@ -14,4 +14,7 @@ $engine = new \League\Plates\Engine('../templates');
 // Create a new template
 $template = new \League\Plates\Template($engine);
 
+// define config
+$template -> login_status = true;
+$template -> login_user_name = 'Wei Chen';
 ?>

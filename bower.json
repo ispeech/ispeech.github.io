@@ -22,5 +22,8 @@
   },
   "devDependencies": {
     "slide": "~0.12.0"
+  },
+  "resolutions": {
+    "jquery": "~2.1.0"
   }
 }

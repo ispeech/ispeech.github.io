@@ -3,15 +3,38 @@
 		<span id="sidenav_close"></span>
 		<div class="side_logo">Ispeech 愛聽講</div>
 	    <div class="search-box">
-            <input placeholder="點這裡搜尋">
+            <input placeholder="點這裡搜尋演講..">
             <span class="icon glyphicon glyphicon-search"></span>
         </div>
-
-		<div>Welcome,<span class="login_user_name"><?=$this->login_user_name?></span></div>
+		<div class="user_welcome">
+			<p>Hi,</p>
+			<span class="login_user_name"><?=$this->login_user_name?></span>
+		</div>
+		<p class="side-use">在 Ispeech 中你將可以自定義標籤，提供給你有收藏的文章，以便日後尋找。</p>
 		<ul class="">
-			<li>自定標簽</li>
-			<li>查看收藏文章</li>
+			<li>
+				<a href="/ispeech_feature/pages/tag.php">
+				管理標簽
+				<span class="badge">14</span>
+				</a>
+			</li>
+			<li>
+				<a href="/ispeech_feature/pages/box.php">
+				查看收藏文章
+				<span class="badge">14</span>
+				</a>
+			</li>
+			<li>
+				<a href="/ispeech_feature/pages/user.php">
+				基本資料設定
+				</a>
+			</li>
+			<li>
+				<a href="/ispeech_feature/pages/logout.php">
+				登出
+				</a>
+			</li>
 		</ul>
-
+		<p class="side-use quote">No one saves us but ourselves. No one can and no one may. We ourselves must walk the path. - Buddha</p>
 	</div>
 </nav>

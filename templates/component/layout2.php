@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- <link rel="stylesheet" href="http://kkbruce.tw/Content/bootstrap/css?v=1UgUvHStxOO5lRxIHx24MCHf41ECy2UyYy21xTm0kd41"> -->
         <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="../bower_components/flat-ui-official/css/flat-ui.css">
 

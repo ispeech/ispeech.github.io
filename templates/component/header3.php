@@ -2,14 +2,15 @@
 <div class="sticky-wrapper" >
 <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
+    <a href="/ispeech_feature/pages/nindex.php" class="logo">Is</a>
         <!--mobile tablet-->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle"></button>
 
-            <a class="logo_mobile" href="/ispeech_feature/pages/nindex.php">
-                <span class="glyphicon glyphicon-heart-empty icon-mobile"></span>
-                <span>聽講</span>
-            </a>
+            <div class="logo_mobile">
+                <!-- <span class="glyphicon glyphicon-heart-empty icon-mobile"></span> -->
+                愛聽講
+            </div>
 
             <!-- <a id="translateLink" class="btn btn-large btn-primary" style="font-size: 2em;">簡體</a> -->
             <!-- <a class="navbar-brand" href="/ispeech/pages/index.php"></a> -->
@@ -17,7 +18,7 @@
 
         <!--桌機-->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
-            <a href="/ispeech_feature/pages/nindex.php" class="logo">Is</a>
+
             <p class="slogan">多看多聽不一樣的經驗分享，將改變你的態度與人生</p>
 
             <?php if ($this->login_status) {?>

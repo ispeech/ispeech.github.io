@@ -1,14 +1,14 @@
 <?php
   $repeat = 8;
+  $j_repeat = 1;
 ?>
 
 
 <div class="row">
-    <h2 class="example-title">太陽花學運
-        <span>看更多此專題演講</span>
-    </h2>
+    <h2 class="example-title">太陽花學運</h2>
+    <span class="sub-title">看更多此專題演講</span>
     <div class="row">
-
+        <?php for($i=0;$i<$this->thumbnail_b_num;$i++) { ?>
         <div class="col-md-6">
             <div class="jumbotron">
                 <div class="jumbotron-photo">
@@ -27,40 +27,19 @@
                         <label>發佈日期</label>
                         <span>2014.04.05</span>
                     </div>
-<a href="#" class="btn btn-warning btn-font" role="button">收藏起來</a> <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
+<a href="#myModal" role="button" class="btn btn-warning btn-font" data-toggle="modal">收藏起來</a>
+<a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="jumbotron">
-                <div class="jumbotron-photo">
-                    <img src="http://blogs-images.forbes.com/connieguglielmo/files/2012/11/Steve-Jobs-dates.jpg" />
-                </div>
-                <div class="jumbotron-contents">
-                    <h1 id="title">賈伯斯在史丹福大學畢業禮演講</h1>
-                    <p id="description" class="lead description">我去年問他(凱文·凱利)：『喬布斯從你那裡學到了人生的座右銘，stay hungry ，stay foolish ，這句話你是如何理解的？你可不可以用最簡單、最容易懂的語言，闡述、詮釋這四個英文字？』他是這麼說的：『我們必須了解自己的渺小，如果我們不學習，科技的發展速度會讓我們所有的一切在五年後被清空...</p>
-
-                    <div class="keyword">
-                        <label>關鍵字</label>
-                        <p>太陽花、學運、大腸花、林飛凡、馬卡茸</p>
-                    </div>
-
-                    <div class="date">
-                        <label>發佈日期</label>
-                        <span>2014.04.05</span>
-                    </div>
-<a href="#" class="btn btn-warning btn-font" role="button">收藏起來</a> <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
-                </div>
-            </div>
-        </div>
+        <?php } ?>
 
     </div>
 
-    <h2 class="example-title">資策會
-        <span>看更多此專題演講</span>
-    </h2>
-    <div class="row">
-
+    <h2 class="example-title">資策會</h2>
+        <span class="sub-title">看更多此專題演講</span>
+        <div class="row">
+      <?php for($i=0;$i<$this->thumbnail_b_num;$i++) { ?>
         <div class="col-md-6">
             <div class="jumbotron">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -101,11 +80,12 @@
                         <label>發佈日期</label>
                         <span>2014.04.05</span>
                     </div>
-<a href="#" class="btn btn-warning btn-font" role="button">收藏起來</a> <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
+<a href="#myModal" role="button" class="btn btn-warning btn-font" data-toggle="modal">收藏起來</a>
+<a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
                 </div>
             </div>
         </div>
-
+      <?php } ?>
     </div>
 </div>
 
@@ -115,7 +95,7 @@
 <div class="row">
   <h2 class="example-title">過去演講</h2>
   <div class="row">
-    <?php for($i=0;$i<$repeat;$i++) { ?>
+    <?php for($i=0;$i<$this->thumbnail_a_num;$i++) { ?>
       <div class="col-sm-6 col-md-4">
         <div id="<?php $i ?>" class="thumbnail">
           <img class="img-rounded" src="http://assets.thewall.tw/uploads/announcement/masthead/287/1e8a9e41-37c2-45d5-b17f-59523a371688.jpg" >
@@ -135,7 +115,6 @@
                 <label>發佈日期</label>
                 <span>2014.04.05</span>
             </div>
-
 
             <a href="#myModal" role="button" class="btn btn-warning btn-font" data-toggle="modal">收藏起來</a>
             <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>

@@ -3,7 +3,7 @@
 
 
 <?php $this -> start('CSS') ?>
-<link rel="stylesheet" href="../static/css/nindex.css">
+<link rel="stylesheet" href="../static/css/box.css">
 <?php $this -> end() ?>
 
 <?php $this -> start('content') ?>
@@ -15,9 +15,7 @@
 
   <div class="container container-top">
 
-      <?php $this -> insert('component/tagcloud') ?>
-      <?php $this -> insert('component/thumbnail') ?>
-      <?php $this -> insert('component/pagination') ?>
+      <?php $this -> insert('component/boxList') ?>
 
   </div>
 

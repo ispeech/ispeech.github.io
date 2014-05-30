@@ -103,10 +103,12 @@ a {
 
 /* line 34, ../sass/component/_base.scss */
 body {
-  font-family: Helvetica, 'Heiti TC', 'Segoe UI', 微軟正黑體;
+  font-family: 'Source Sans Pro', Helvetica, 'Heiti TC', 'Segoe UI', 微軟正黑體, sans-serif;
+  overflow-x: hidden;
+  background: #ebe8d7 url("http://subtlepatterns.com/patterns/giftly.png");
 }
 
-/* line 38, ../sass/component/_base.scss */
+/* line 40, ../sass/component/_base.scss */
 .container-top {
   padding-top: 70px;
 }
@@ -170,9 +172,10 @@ img {
 
 /* line 57, ../sass/component/_header.scss */
 .logo {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  display: table-cell;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.2em;
   background-color: #C73E3E;
   position: absolute;
   color: #ffffff;
@@ -187,57 +190,55 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(51, 51, 102, 0.5);
   box-shadow: 0px 1px 3px rgba(51, 51, 102, 0.5);
 }
-/* line 76, ../sass/component/_header.scss */
+/* line 78, ../sass/component/_header.scss */
 .logo:hover {
   background-color: #FFFFFF;
 }
 
-/* line 80, ../sass/component/_header.scss */
+/* line 82, ../sass/component/_header.scss */
 .logo_mobile {
-  line-height: 70px;
-  margin-left: 66px;
-  font-family: -webkit-pictograph;
   color: #ffffff;
   font-size: 2em;
-  text-align: center;
-  display: inherit;
 }
 
-/* line 89, ../sass/component/_header.scss */
+/* line 101, ../sass/component/_header.scss */
 .icon-mobile {
   top: 6px;
 }
 
 @media (min-width: 768px) {
-  /* line 93, ../sass/component/_header.scss */
+  /* line 105, ../sass/component/_header.scss */
   .logo_mobile {
     display: none;
   }
 }
-/* line 97, ../sass/component/_header.scss */
+@media (max-width: 768px) {
+  /* line 111, ../sass/component/_header.scss */
+  .logo {
+    left: 10px;
+  }
+}
+/* line 115, ../sass/component/_header.scss */
+.navbar-header {
+  text-align: center;
+  height: 53px;
+}
+
+/* line 119, ../sass/component/_header.scss */
 .navbar-toggle {
+  margin: 7px 15px 0 0;
   position: relative;
   float: right;
   margin-right: 15px;
-  /*padding:9px 10px;*/
-  background-color: #2B2B2B;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  padding: 0px 10px;
   background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
+  border: 0px solid transparent;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
 }
 
-@media only screen and (max-width: 600px) {
-  /* line 3, ../sass/component/_navbar.scss */
-  .main .search-box {
-    float: none;
-    width: 100%;
-    margin-bottom: -110px;
-    margin-top: 70px;
-  }
-}
-/* line 11, ../sass/component/_navbar.scss */
+/* line 3, ../sass/component/_navbar.scss */
 .search-box {
   margin: 0 auto;
   width: 80%;
@@ -245,14 +246,14 @@ img {
   position: relative;
 }
 
-/* line 20, ../sass/component/_navbar.scss */
+/* line 12, ../sass/component/_navbar.scss */
 .search-box input:focus ~ .icon {
   opacity: 1;
   z-index: 3;
   color: #61c7b3;
 }
 
-/* line 25, ../sass/component/_navbar.scss */
+/* line 17, ../sass/component/_navbar.scss */
 .search-box input {
   position: absolute;
   top: 0;
@@ -273,14 +274,14 @@ img {
   transition-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
 }
 
-/* line 45, ../sass/component/_navbar.scss */
+/* line 37, ../sass/component/_navbar.scss */
 .search-box input:focus {
   color: #333;
   border-color: #d6d6d6;
   background-color: #ffffff;
 }
 
-/* line 51, ../sass/component/_navbar.scss */
+/* line 43, ../sass/component/_navbar.scss */
 .search-box .icon {
   position: absolute;
   top: 0;
@@ -294,18 +295,18 @@ img {
   opacity: .5;
 }
 
-/* line 63, ../sass/component/_navbar.scss */
+/* line 55, ../sass/component/_navbar.scss */
 .search-box input, .search-box .icon {
   transition-duration: .3s;
 }
 
-/* line 67, ../sass/component/_navbar.scss */
+/* line 59, ../sass/component/_navbar.scss */
 .tab-content {
   padding: 25px;
   text-align: justify;
 }
 
-/* line 74, ../sass/component/_navbar.scss */
+/* line 66, ../sass/component/_navbar.scss */
 .slogan {
   position: absolute;
   font-size: 1em;
@@ -314,7 +315,7 @@ img {
   color: #ffffff;
 }
 
-/* line 82, ../sass/component/_navbar.scss */
+/* line 74, ../sass/component/_navbar.scss */
 .side_menu {
   color: #fff;
   position: fixed;
@@ -326,7 +327,7 @@ img {
   overflow: visible;
 }
 
-/* line 94, ../sass/component/_navbar.scss */
+/* line 86, ../sass/component/_navbar.scss */
 .side_body {
   background: #424447 url("http://subtlepatterns.com/patterns/grey_wash_wall.png");
   box-shadow: -20px 0px 10px -20px rgba(0, 0, 0, 0.6) inset;
@@ -342,36 +343,47 @@ img {
   transform: translateX(-277px);
   position: relative;
   z-index: 2;
-  overflow: auto;
   height: 100%;
   width: 277px;
 }
-/* line 95, ../sass/component/_navbar.scss */
+/* line 109, ../sass/component/_navbar.scss */
+.side_body ul {
+  padding: 0 1em;
+}
+/* line 111, ../sass/component/_navbar.scss */
+.side_body ul li {
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+/* line 114, ../sass/component/_navbar.scss */
+.side_body ul li:hover {
+  color: #D1D1D1;
+}
+/* line 117, ../sass/component/_navbar.scss */
+.side_body ul li a {
+  font-size: 1em;
+  line-height: 1em;
+  color: #ffffff;
+}
+/* line 125, ../sass/component/_navbar.scss */
 .side_body div {
-  padding: 1em;
+  padding: 1em 0 0 1em;
+}
+/* line 128, ../sass/component/_navbar.scss */
+.side_body .user_welcome {
+  padding-bottom: 0;
 }
 
-/* line 118, ../sass/component/_navbar.scss */
-.main {
-  background: #ebe8d7 url("http://subtlepatterns.com/patterns/giftly.png");
-  overflow: auto;
+/* line 132, ../sass/component/_navbar.scss */
+.container {
   -webkit-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
   -moz-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
   -ms-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
   -o-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
   transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 5;
 }
 
-/* line 136, ../sass/component/_navbar.scss */
+/* line 150, ../sass/component/_navbar.scss */
 .navbar {
   -webkit-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
   -moz-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
@@ -385,7 +397,7 @@ img {
   transform: translateX(0);
 }
 
-/* line 149, ../sass/component/_navbar.scss */
+/* line 163, ../sass/component/_navbar.scss */
 .sidemenu_visible .side_body {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -393,8 +405,8 @@ img {
   -o-transform: translateX(0);
   transform: translateX(100);
 }
-/* line 156, ../sass/component/_navbar.scss */
-.sidemenu_visible .main, .sidemenu_visible .navbar {
+/* line 170, ../sass/component/_navbar.scss */
+.sidemenu_visible .container, .sidemenu_visible .navbar {
   -webkit-transform: translateX(277px);
   -moz-transform: translateX(277px);
   -ms-transform: translateX(277px);
@@ -402,7 +414,7 @@ img {
   transform: translateX(277px);
 }
 
-/* line 164, ../sass/component/_navbar.scss */
+/* line 178, ../sass/component/_navbar.scss */
 #sidenav_close {
   background: url("http://www.bevisionare.com/img/close.png") no-repeat center;
   cursor: pointer;
@@ -412,13 +424,52 @@ img {
   width: 30px;
 }
 
-/* line 172, ../sass/component/_navbar.scss */
+/* line 186, ../sass/component/_navbar.scss */
+.side_body .side_logo {
+  padding: 1em;
+}
+
+/* line 189, ../sass/component/_navbar.scss */
 .side_logo {
   font-family: -webkit-pictograph;
   color: #ffffff;
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 2em;
   text-align: center;
+}
+
+/* line 202, ../sass/component/_navbar.scss */
+.badge {
+  top: 3px;
+  position: relative;
+  margin-left: 10px;
+  float: right;
+}
+
+/* line 209, ../sass/component/_navbar.scss */
+.user_welcome {
+  margin: 0 1em;
+  padding: 0;
+}
+/* line 213, ../sass/component/_navbar.scss */
+.user_welcome p, .user_welcome span {
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+/* line 218, ../sass/component/_navbar.scss */
+.side-use {
+  margin: 0 1em;
+  padding: 1em;
+  color: #BEBEBE;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+/* line 225, ../sass/component/_navbar.scss */
+.quote {
+  position: relative;
+  margin-top: 15em;
 }
 
 /* line 2, ../sass/component/_slide.scss */
@@ -481,16 +532,7 @@ img {
   background-position: 0 -26px;
 }
 
-@media only screen and (max-width: 600px) {
-  /* line 3, ../sass/component/_navbar.scss */
-  .main .search-box {
-    float: none;
-    width: 100%;
-    margin-bottom: -110px;
-    margin-top: 70px;
-  }
-}
-/* line 11, ../sass/component/_navbar.scss */
+/* line 3, ../sass/component/_navbar.scss */
 .search-box {
   margin: 0 auto;
   width: 80%;
@@ -498,14 +540,14 @@ img {
   position: relative;
 }
 
-/* line 20, ../sass/component/_navbar.scss */
+/* line 12, ../sass/component/_navbar.scss */
 .search-box input:focus ~ .icon {
   opacity: 1;
   z-index: 3;
   color: #61c7b3;
 }
 
-/* line 25, ../sass/component/_navbar.scss */
+/* line 17, ../sass/component/_navbar.scss */
 .search-box input {
   position: absolute;
   top: 0;
@@ -526,14 +568,14 @@ img {
   transition-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
 }
 
-/* line 45, ../sass/component/_navbar.scss */
+/* line 37, ../sass/component/_navbar.scss */
 .search-box input:focus {
   color: #333;
   border-color: #d6d6d6;
   background-color: #ffffff;
 }
 
-/* line 51, ../sass/component/_navbar.scss */
+/* line 43, ../sass/component/_navbar.scss */
 .search-box .icon {
   position: absolute;
   top: 0;
@@ -547,18 +589,18 @@ img {
   opacity: .5;
 }
 
-/* line 63, ../sass/component/_navbar.scss */
+/* line 55, ../sass/component/_navbar.scss */
 .search-box input, .search-box .icon {
   transition-duration: .3s;
 }
 
-/* line 67, ../sass/component/_navbar.scss */
+/* line 59, ../sass/component/_navbar.scss */
 .tab-content {
   padding: 25px;
   text-align: justify;
 }
 
-/* line 74, ../sass/component/_navbar.scss */
+/* line 66, ../sass/component/_navbar.scss */
 .slogan {
   position: absolute;
   font-size: 1em;
@@ -567,7 +609,7 @@ img {
   color: #ffffff;
 }
 
-/* line 82, ../sass/component/_navbar.scss */
+/* line 74, ../sass/component/_navbar.scss */
 .side_menu {
   color: #fff;
   position: fixed;
@@ -579,7 +621,7 @@ img {
   overflow: visible;
 }
 
-/* line 94, ../sass/component/_navbar.scss */
+/* line 86, ../sass/component/_navbar.scss */
 .side_body {
   background: #424447 url("http://subtlepatterns.com/patterns/grey_wash_wall.png");
   box-shadow: -20px 0px 10px -20px rgba(0, 0, 0, 0.6) inset;
@@ -595,36 +637,47 @@ img {
   transform: translateX(-277px);
   position: relative;
   z-index: 2;
-  overflow: auto;
   height: 100%;
   width: 277px;
 }
-/* line 95, ../sass/component/_navbar.scss */
+/* line 109, ../sass/component/_navbar.scss */
+.side_body ul {
+  padding: 0 1em;
+}
+/* line 111, ../sass/component/_navbar.scss */
+.side_body ul li {
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+/* line 114, ../sass/component/_navbar.scss */
+.side_body ul li:hover {
+  color: #D1D1D1;
+}
+/* line 117, ../sass/component/_navbar.scss */
+.side_body ul li a {
+  font-size: 1em;
+  line-height: 1em;
+  color: #ffffff;
+}
+/* line 125, ../sass/component/_navbar.scss */
 .side_body div {
-  padding: 1em;
+  padding: 1em 0 0 1em;
+}
+/* line 128, ../sass/component/_navbar.scss */
+.side_body .user_welcome {
+  padding-bottom: 0;
 }
 
-/* line 118, ../sass/component/_navbar.scss */
-.main {
-  background: #ebe8d7 url("http://subtlepatterns.com/patterns/giftly.png");
-  overflow: auto;
+/* line 132, ../sass/component/_navbar.scss */
+.container {
   -webkit-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
   -moz-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
   -ms-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
   -o-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
   transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 5;
 }
 
-/* line 136, ../sass/component/_navbar.scss */
+/* line 150, ../sass/component/_navbar.scss */
 .navbar {
   -webkit-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
   -moz-transition: all 0.5s cubic-bezier(0.335, 0.815, 0.47, 1);
@@ -638,7 +691,7 @@ img {
   transform: translateX(0);
 }
 
-/* line 149, ../sass/component/_navbar.scss */
+/* line 163, ../sass/component/_navbar.scss */
 .sidemenu_visible .side_body {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -646,8 +699,8 @@ img {
   -o-transform: translateX(0);
   transform: translateX(100);
 }
-/* line 156, ../sass/component/_navbar.scss */
-.sidemenu_visible .main, .sidemenu_visible .navbar {
+/* line 170, ../sass/component/_navbar.scss */
+.sidemenu_visible .container, .sidemenu_visible .navbar {
   -webkit-transform: translateX(277px);
   -moz-transform: translateX(277px);
   -ms-transform: translateX(277px);
@@ -655,7 +708,7 @@ img {
   transform: translateX(277px);
 }
 
-/* line 164, ../sass/component/_navbar.scss */
+/* line 178, ../sass/component/_navbar.scss */
 #sidenav_close {
   background: url("http://www.bevisionare.com/img/close.png") no-repeat center;
   cursor: pointer;
@@ -665,19 +718,57 @@ img {
   width: 30px;
 }
 
-/* line 172, ../sass/component/_navbar.scss */
+/* line 186, ../sass/component/_navbar.scss */
+.side_body .side_logo {
+  padding: 1em;
+}
+
+/* line 189, ../sass/component/_navbar.scss */
 .side_logo {
   font-family: -webkit-pictograph;
   color: #ffffff;
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 2em;
   text-align: center;
+}
+
+/* line 202, ../sass/component/_navbar.scss */
+.badge {
+  top: 3px;
+  position: relative;
+  margin-left: 10px;
+  float: right;
+}
+
+/* line 209, ../sass/component/_navbar.scss */
+.user_welcome {
+  margin: 0 1em;
+  padding: 0;
+}
+/* line 213, ../sass/component/_navbar.scss */
+.user_welcome p, .user_welcome span {
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+/* line 218, ../sass/component/_navbar.scss */
+.side-use {
+  margin: 0 1em;
+  padding: 1em;
+  color: #BEBEBE;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+/* line 225, ../sass/component/_navbar.scss */
+.quote {
+  position: relative;
+  margin-top: 15em;
 }
 
 /* line 1, ../sass/component/_footer.scss */
 .footer {
   background: url("http://subtlepatterns.com/patterns/congruent_outline.png");
-  box-shadow: 0px 4px 10px 2px black;
 }
 
 /* line 6, ../sass/component/_footer.scss */
@@ -715,7 +806,7 @@ img {
 /* line 33, ../sass/component/_footer.scss */
 .footer-copyright {
   color: #FFFFFF;
-  font-family: cursive;
+  font-family: a;
   margin-top: 1em;
   padding: 0 20px;
 }
@@ -817,7 +908,7 @@ img {
 
   /* line 37, ../sass/component/_author.scss */
   .container {
-    padding: 0;
+    padding: 50px 0 0 0;
   }
 
   /* line 40, ../sass/component/_author.scss */
@@ -864,83 +955,94 @@ html {
 \*------------------------------------*/
 /* line 46, ../sass/article.scss */
 #myTab {
-  background-color: #BEBEBE;
+  background-color: #B82828;
   overflow: hidden;
+  border: 0px;
 }
 
-/* line 50, ../sass/article.scss */
+/* line 51, ../sass/article.scss */
 .right {
   float: right;
 }
 
 /* line 54, ../sass/article.scss */
-.nav-tabs li {
-  border-left: 1px solid #FFFFFF;
+.active {
+  border: 1px;
 }
+
 /* line 57, ../sass/article.scss */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border: 0px;
+}
+
+/* line 64, ../sass/article.scss */
 .nav-tabs li a {
   color: #fff;
   text-align: center;
+  border: 0px;
+  border-radius: 0px;
+  margin: 0px;
 }
-/* line 60, ../sass/article.scss */
+/* line 70, ../sass/article.scss */
 .nav-tabs li a:hover {
-  background-color: #9CB8E2;
+  background-color: #67768B;
+  border: 0px;
 }
-/* line 64, ../sass/article.scss */
+/* line 78, ../sass/article.scss */
 .nav-tabs li:nth-child(odd) {
   width: 30%;
 }
-/* line 67, ../sass/article.scss */
+/* line 81, ../sass/article.scss */
 .nav-tabs li:nth-child(even) {
   width: 40%;
 }
 
-/* line 75, ../sass/article.scss */
+/* line 90, ../sass/article.scss */
 .tab-content {
   font-size: 2em;
   background-color: #ffffff;
 }
-/* line 79, ../sass/article.scss */
+/* line 94, ../sass/article.scss */
 .tab-content h1 {
   font-size: 1em;
   margin: 0.67em 0;
 }
-/* line 80, ../sass/article.scss */
+/* line 95, ../sass/article.scss */
 .tab-content h2 {
   font-size: .8em;
   margin: 0.75em 0;
 }
-/* line 81, ../sass/article.scss */
+/* line 96, ../sass/article.scss */
 .tab-content h3 {
   font-size: .6em;
   margin: 0.83em 0;
 }
-/* line 82, ../sass/article.scss */
+/* line 97, ../sass/article.scss */
 .tab-content h5 {
   font-size: .4em;
   margin: 1.5em 0;
 }
-/* line 83, ../sass/article.scss */
+/* line 98, ../sass/article.scss */
 .tab-content h6 {
   font-size: .2em;
   margin: 1.67em 0;
 }
-/* line 84, ../sass/article.scss */
+/* line 99, ../sass/article.scss */
 .tab-content h1, .tab-content h2, .tab-content h3, .tab-content h4, .tab-content h5, .tab-content h6 {
   font-weight: bolder;
 }
-/* line 86, ../sass/article.scss */
+/* line 101, ../sass/article.scss */
 .tab-content p {
   line-height: 2em;
   color: #333;
   margin: 2em 0;
 }
-/* line 91, ../sass/article.scss */
+/* line 106, ../sass/article.scss */
 .tab-content .mix {
   color: #9D9E9E;
 }
 
-/* line 96, ../sass/article.scss */
+/* line 111, ../sass/article.scss */
 .disqus_thread {
   margin: 2em 0;
 }
@@ -948,7 +1050,7 @@ html {
 /*------------------------------------*\
     Youtube fix
 \*------------------------------------*/
-/* line 106, ../sass/article.scss */
+/* line 121, ../sass/article.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -957,7 +1059,7 @@ html {
   overflow: hidden;
 }
 
-/* line 117, ../sass/article.scss */
+/* line 132, ../sass/article.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -968,13 +1070,13 @@ html {
   height: 100%;
 }
 
-/* line 124, ../sass/article.scss */
+/* line 139, ../sass/article.scss */
 .fixed {
   position: fixed;
   top: 100px;
 }
 
-/* line 128, ../sass/article.scss */
+/* line 143, ../sass/article.scss */
 .fb-like-box {
   background-color: #fff;
 }

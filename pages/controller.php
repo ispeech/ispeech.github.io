@@ -17,4 +17,9 @@ $template = new \League\Plates\Template($engine);
 // define config
 $template -> login_status = true;
 $template -> login_user_name = 'Wei Chen';
+
+$template -> thumbnail_a_num = 8;
+$template -> thumbnail_b_num = 2;
+$template -> thumbnail_c_num = 2;
+
 ?>

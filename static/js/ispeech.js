@@ -116,7 +116,15 @@ $('#sidenav_close,.container').on('click',function(){
 $('.sticky-wrapper').waypoint('sticky');
 
 $(window).on({
-    ready: ISPEECH.event.screenWidth,
+    load: ISPEECH.event.screenWidth,
     resize: ISPEECH.event.screenWidth,
     scroll: ISPEECH.event.scrollEvent
 });
+
+// $('#loading-example-btn').click(function () {
+// var btn = $(this)
+// btn.button('loading')
+// $.ajax(...).always(function () {
+//   btn.button('reset')
+// });
+// });

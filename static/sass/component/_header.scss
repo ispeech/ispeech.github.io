@@ -56,9 +56,11 @@ border-radius: 16px;
 
 .logo{
     // @include wh(60px,60px);
-	width: 60px;
-	height: 60px;
-    line-height: 60px;
+    display:table-cell;
+
+	width: 1.2em;
+	height: 1.2em;
+    line-height: 1.2em;
     background-color: #C73E3E;
     position: absolute;
     color: #ffffff;
@@ -78,13 +80,23 @@ box-shadow:0px 1px 3px rgba(20%,20%,40%,0.5);
     }
 }
 .logo_mobile{
-    line-height: 70px;
-    margin-left: 66px;
-    font-family: -webkit-pictograph;
-    color: #ffffff;
-    font-size: 2em;
-    text-align: center;
-    display: inherit;
+// 	margin-left: 66px;
+// font-family: -webkit-pictograph;
+color: #ffffff;
+font-size: 2em;
+// display: inline-block;
+// line-height: 4.5em;
+
+ //    line-height: 0;
+ //    height: 1.5em;
+ //    margin-left: 66px;
+ //    font-family: -webkit-pictograph;
+ //    color: #ffffff;
+ //    font-size: 2em;
+ //    text-align: center;
+ //    display: inherit;
+ //    position: relative;
+	// top: 25px;
 }
 .icon-mobile{
     top: 6px;
@@ -94,16 +106,25 @@ box-shadow:0px 1px 3px rgba(20%,20%,40%,0.5);
         display: none;
     }
 }
+
+@media (max-width:768px) {
+    .logo{
+        left: 10px;
+    }
+}
+.navbar-header{
+	text-align: center;
+	height: 53px;
+}
 .navbar-toggle {
-    position:relative;
-    float:right;
-    margin-right:15px;
-    /*padding:9px 10px;*/
-    background-color: #2B2B2B;
-    margin-top:8px;
-    margin-bottom:8px;
-    // background-color:transparent;
-    background-image:none;
-    border:1px solid transparent;
-    border-radius:4px
+	margin: 7px 15px 0 0;
+position: relative;
+float: right;
+margin-right: 15px;
+padding: 0px 10px;
+background-image: none;
+border: 0px solid transparent;
+height: 40px;
+width: 40px;
+line-height: 40px;
 }

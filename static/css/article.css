@@ -244,7 +244,7 @@ img {
 }
 
 /* line 66, ../sass/component/_header.scss */
-.logo {
+.logo, .modal_logo p {
   width: 1.2em;
   height: 1.2em;
   line-height: 1.2em;
@@ -262,7 +262,7 @@ img {
   box-shadow: 0px 1px 3px rgba(51, 51, 102, 0.5);
 }
 /* line 85, ../sass/component/_header.scss */
-.logo:hover {
+.logo:hover, .modal_logo p:hover {
   color: #FFFFFF;
 }
 
@@ -285,7 +285,7 @@ img {
 }
 @media (max-width: 768px) {
   /* line 116, ../sass/component/_header.scss */
-  .logo {
+  .logo, .modal_logo p {
     left: 10px;
   }
 }
@@ -1079,13 +1079,116 @@ img {
   }
 }
 /* line 63, ../sass/component/_author.scss */
-.img-responsive {
+.img-fit {
   height: 100%;
 }
 
 /* line 66, ../sass/component/_author.scss */
 .author_img {
   background-color: #000000;
+}
+
+/* line 1, ../sass/component/_modal.scss */
+.modal {
+  overflow-y: hidden;
+}
+
+/* line 5, ../sass/component/_modal.scss */
+.modal-dialog {
+  margin-top: 3em;
+}
+
+/* line 9, ../sass/component/_modal.scss */
+.modal-content {
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+/* line 14, ../sass/component/_modal.scss */
+.modal-body h1 {
+  text-align: center;
+}
+/* line 18, ../sass/component/_modal.scss */
+.modal-body h1 {
+  font-size: 2em;
+}
+/* line 21, ../sass/component/_modal.scss */
+.modal-body p {
+  font-size: 1em;
+}
+
+/* line 26, ../sass/component/_modal.scss */
+.modal_logo {
+  margin: 2em auto;
+  width: 69%;
+  text-align: center;
+}
+/* line 31, ../sass/component/_modal.scss */
+.modal_logo p {
+  position: relative;
+  box-shadow: none;
+  font-size: 3em;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  display: inline-block;
+  border-bottom: 2px solid #812C2C;
+  left: 0;
+}
+/* line 45, ../sass/component/_modal.scss */
+.modal_logo span {
+  font-size: 2em;
+  width: 9em;
+  height: 3em;
+  line-height: 3em;
+  display: inline-block;
+  background: #A13C3C;
+  color: #ffffff;
+  float: left;
+  border-bottom: 2px solid #812C2C;
+  text-align: center;
+}
+/* line 60, ../sass/component/_modal.scss */
+.modal_logo:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+/* line 69, ../sass/component/_modal.scss */
+.modal-wrap p {
+  margin: 1em 5em 0em;
+  text-align: justify;
+}
+
+/* line 75, ../sass/component/_modal.scss */
+.modal-quote {
+  color: #333333;
+  line-height: 1.5em;
+  background-color: #F0F0F0;
+  padding: 1em;
+}
+
+/* line 83, ../sass/component/_modal.scss */
+.welcome_to_ispeech ul {
+  margin: 1em 5em 2em;
+}
+
+/* line 88, ../sass/component/_modal.scss */
+.fb_login_btn {
+  width: 40%;
+  background-color: #0e6aa4;
+  border: 1px solid #0c5b8d;
+  border-bottom: 3px solid #083c5e;
+  display: block;
+  margin: 0 auto;
+}
+/* line 95, ../sass/component/_modal.scss */
+.fb_login_btn:hover {
+  background-color: #0D4D75;
+  border: 1px solid #0c5b8d;
+  border-bottom: 3px solid #083c5e;
 }
 
 /* line 61, ../../../../../../../Users/wilson/Downloads/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */

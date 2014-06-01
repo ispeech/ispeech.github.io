@@ -1079,7 +1079,7 @@ img {
   }
 }
 /* line 63, ../sass/component/_author.scss */
-.img-responsive {
+.img-fit {
   height: 100%;
 }
 

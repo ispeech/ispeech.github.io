@@ -34,7 +34,7 @@
                         <span>2014.04.05</span>
                     </div>
 <a href="#myModal" role="button" class="btn btn-warning btn-font collect" data-toggle="modal">收藏起來</a>
-<a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font navbar-right reading" role="button">詳細閱讀</a>
+<a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font  reading" role="button">詳細閱讀</a>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
                         <span>2014.04.05</span>
                     </div>
 <a href="#myModal" role="button" class="btn btn-warning btn-font collect" data-toggle="modal">收藏起來</a>
-<a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font navbar-right reading" role="button">詳細閱讀</a>
+<a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font reading" role="button">詳細閱讀</a>
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
             </div>
 
             <a href="#myModal" role="button" class="btn btn-warning btn-font collect" data-toggle="modal">收藏起來</a>
-            <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font navbar-right reading" role="button">詳細閱讀</a>
+            <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font reading" role="button">詳細閱讀</a>
 
           </div>
         </div>

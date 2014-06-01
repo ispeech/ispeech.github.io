@@ -25,11 +25,11 @@
 				<span class="badge">14</span>
 				</a>
 			</li>
-			<li>
+<!-- 			<li>
 				<a href="/ispeech_feature/pages/user.php">
 				基本資料設定
 				</a>
-			</li>
+			</li> -->
 			<li>
 				<a id="translateLink">
 					簡繁互換

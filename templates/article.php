@@ -17,7 +17,7 @@
 	</div>
 
 	<?php $this -> insert('component/footer2') ?>
-
+  <?php $this -> insert('component/modal') ?>
 
 
 <?php $this -> end() ?>

@@ -20,15 +20,21 @@
 
                     <div class="keyword p">
                         <label>關鍵字</label>
-                        <p>太陽花、學運、大腸花、林飛凡、馬卡茸</p>
+                        <div class="tag_style_2">
+                            <a href="#">太陽花</a>
+                            <a href="#">學運</a>
+                            <a href="#">大腸花</a>
+                            <a href="#">林非凡</a>
+                            <a href="#">馬卡茸</a>
+                        </div>
                     </div>
 
                     <div class="date">
                         <label>發佈日期</label>
                         <span>2014.04.05</span>
                     </div>
-<a href="#myModal" role="button" class="btn btn-warning btn-font" data-toggle="modal">收藏起來</a>
-<a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
+<a href="#myModal" role="button" class="btn btn-warning btn-font collect" data-toggle="modal">收藏起來</a>
+<a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font navbar-right reading" role="button">詳細閱讀</a>
                 </div>
             </div>
         </div>
@@ -73,15 +79,21 @@
 
                     <div class="keyword">
                         <label>關鍵字</label>
-                        <p>太陽花、學運、大腸花、林飛凡、馬卡茸</p>
+                        <div class="tag_style_2">
+                            <a href="#">太陽花</a>
+                            <a href="#">學運</a>
+                            <a href="#">大腸花</a>
+                            <a href="#">林非凡</a>
+                            <a href="#">馬卡茸</a>
+                        </div>
                     </div>
 
                     <div class="date">
                         <label>發佈日期</label>
                         <span>2014.04.05</span>
                     </div>
-<a href="#myModal" role="button" class="btn btn-warning btn-font" data-toggle="modal">收藏起來</a>
-<a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
+<a href="#myModal" role="button" class="btn btn-warning btn-font collect" data-toggle="modal">收藏起來</a>
+<a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font navbar-right reading" role="button">詳細閱讀</a>
                 </div>
             </div>
         </div>
@@ -108,7 +120,13 @@
 
             <div class="keyword">
                 <label>關鍵字</label>
-                <p>太陽花、學運、大腸花、林飛凡、馬卡茸</p>
+                <div class="tag_style_2">
+                    <a href="#">太陽花</a>
+                    <a href="#">學運</a>
+                    <a href="#">大腸花</a>
+                    <a href="#">林非凡</a>
+                    <a href="#">馬卡茸</a>
+                </div>
             </div>
 
             <div class="date">
@@ -116,8 +134,8 @@
                 <span>2014.04.05</span>
             </div>
 
-            <a href="#myModal" role="button" class="btn btn-warning btn-font" data-toggle="modal">收藏起來</a>
-            <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
+            <a href="#myModal" role="button" class="btn btn-warning btn-font collect" data-toggle="modal">收藏起來</a>
+            <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font navbar-right reading" role="button">詳細閱讀</a>
 
           </div>
         </div>

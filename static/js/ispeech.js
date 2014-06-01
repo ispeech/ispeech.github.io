@@ -61,8 +61,26 @@
 
     ISPEECH.event = {
 
+        load: function () {
+            ISPEECH.event._verticalAlign();
 
-        screenWidth: function(){
+            if( ISPEECH.env.login.status )
+                ISPEECH.event.bindLoginEvent();
+            else
+                ISPEECH.event.bindNotLoginEvent();
+        },
+
+        resize: function () {
+            ISPEECH.event._verticalAlign();
+            ISPEECH.event._fixed();
+        },
+
+        scroll: function () {
+            ISPEECH.event._verticalAlign();
+            ISPEECH.event._fixed();
+        },
+
+        _verticalAlign: function(){
             var $win = $(window),
                 $layoutChange = $('.layout-change'),
                 $imgResponsive = $('.img-responsive'),
@@ -76,49 +94,82 @@
             }else{
                 $imgResponsive.attr('style','');
             }
+
         },
 
-        scrollEvent: function(){
+        _fixed: function(){
 
             var $win = $(window),
                 $fix = $('.fix-section'),
                 maxHeight = document.body.scrollHeight - 1000,
                 screenWidth = $win.width(),
                 scrollY = $win.scrollTop(),
-                minHeight = ISPEECH.env.fixTop - 100;
+                minHeight = ISPEECH.env.fixTop - 100,
+                detlaY = scrollY - minHeight;
 
             if(screenWidth > 980){
                 if(minHeight <= scrollY && scrollY <= maxHeight){
-                    $fix.addClass('fixed').css('width',ISPEECH.utils.calculateFixWidth(screenWidth));
+                    $fix.addClass('fixed').css({
+                        'width': ISPEECH.utils.calculateFixWidth(screenWidth),
+                        'top': detlaY
+                    });
                 }else{
                     $fix.removeClass('fixed').attr('style','');
                 }
+            }else{
+                $fix.removeClass('fixed').attr('style','');
             }
 
         },
 
         clickMenu: function(){
             $('.menu').toggle()
+        },
+
+        bindNotLoginEvent: function() {
+            $('#myModal').modal('show');
+
+
+
+            $('.advanced_btn, .advanced_btn_mobile').on('click',function () {
+                $('#myModal').modal('show');
+            });
+
+        },
+
+        bindLoginEvent: function () {
+
+            $('#show_side_menu,.open_nav').on('click',function(){
+                $('body').addClass("sidemenu_visible");
+            });
+
+            $('#sidenav_close,body').on('click',function(){
+                $('body').removeClass("sidemenu_visible");
+            });
+
+            $('.navbar,.side_body').on('click',function (e) {
+                e.stopPropagation();
+            });
+
+            $('.sticky-wrapper').waypoint('sticky');
         }
 
     }
 
 })(this)
 
-$('#show_side_menu,.navbar-toggle').on('click',function(){
-    $('body').addClass("sidemenu_visible");
-});
+    $('#myModal').on('click',function () {
+        $(this).modal('hide');
+    });
 
-$('#sidenav_close,.container').on('click',function(){
-    $('body').removeClass("sidemenu_visible");
-});
-
-$('.sticky-wrapper').waypoint('sticky');
+    $('.modal-dialog').on('click',function (e) {
+        e.stopPropagation();
+    });
 
 $(window).on({
-    load: ISPEECH.event.screenWidth,
-    resize: ISPEECH.event.screenWidth,
-    scroll: ISPEECH.event.scrollEvent
+    load: ISPEECH.event.load,
+    resize: ISPEECH.event.resize,
+    scroll: ISPEECH.event.scroll
 });
 
 // $('#loading-example-btn').click(function () {

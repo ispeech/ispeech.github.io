@@ -26,6 +26,6 @@
 <script>
 ISPEECH.env.fixTop = $('.fix-section').offset().top;
 
-$('.sticky-wrapper').waypoint('sticky');
+// $('.sticky-wrapper').waypoint('sticky');
 </script>
 <?php $this -> end() ?>

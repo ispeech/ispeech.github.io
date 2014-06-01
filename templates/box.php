@@ -14,8 +14,8 @@
   <!-- <div class="main"> -->
 
   <div class="container container-top">
-
-      <?php $this -> insert('component/boxList') ?>
+	<?php $this -> insert('component/tagcloud') ?>
+    <?php $this -> insert('component/boxList') ?>
 
   </div>
 
@@ -29,29 +29,6 @@
 
 <?php $this -> start('javascript') ?>
 <script>
-
-// $('#logo').on('click',function(){
-//     var top = $(window).height();
-//     // $(window).scrollTop(top);
-//     $('html,body').animate({scrollTop:top},1000);
-// });
-
-// $('#slides img').css({
-//     width: $(window).width(),
-//     height: $(window).height()
-// });
-
-// $("#slides").slidesjs({
-//         width: $(window).width(),
-//         height: $(window).height(),
-//         navigation: false,
-//         start: 1,
-//         play: {
-//           auto: true
-//         }
-// });
-
-// $('.sticky-wrapper').waypoint('sticky');
 
 </script>
 <?php $this -> end() ?>

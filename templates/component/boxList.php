@@ -1,35 +1,38 @@
+<h2 class="example-title">你收藏的文章</h2>
 <!-- Thumbnails
 ================================================== -->
+<?php for($i=0;$i<$this->thumbnail_a_num;$i++) { ?>
 <div class="row">
-  <h2 class="example-title">過去演講</h2>
-  <div class="row">
-    <?php for($i=0;$i<$this->thumbnail_a_num;$i++) { ?>
-      <div class="col-sm-12 col-md-12">
-        <div id="<?php $i ?>" class="thumbnail box-list">
-          <img class="img-rounded" src="http://assets.thewall.tw/uploads/announcement/masthead/287/1e8a9e41-37c2-45d5-b17f-59523a371688.jpg" >
-          <div class="caption">
-            <h1>太陽花學運，初多稱318學運、佔領國會事件</h1>
-
-            <div class="description">
-              <p>事件起始於當地時間3月18日晚間18時，中國國民黨立法委員張慶忠以30秒之速草率宣布完成 《海峽兩岸服務貿易協議》的委員會審查，而引起一群就讀大學與研究所的學生們反對，並在立法院外舉行「守護民主之夜」晚會，抗議輕率的審查程序；之後有400多名學生趁著警員不備，而進入立法院內靜坐抗議，接著於晚間21時突破警方的封鎖線佔領立法院議場。</p>
-            </div>
-
-            <div class="keyword">
-                <label>關鍵字</label>
-                <p>太陽花、學運、大腸花、林飛凡、馬卡茸</p>
-            </div>
-
-            <div class="date">
-                <label>發佈日期</label>
-                <span>2014.04.05</span>
-            </div>
-
-            <a href="#myModal" role="button" class="btn btn-warning btn-font" data-toggle="modal">收藏起來</a>
-            <a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font" role="button">詳細閱讀</a>
-
-          </div>
-        </div>
+  <div class="author">
+    <div class="col-sm-5">
+      <div class="author_img">
+        <img class="img-responsive" height="100%" src="http://ofinksandpapers.files.wordpress.com/2011/10/126933-steve-jobs.jpg" alt="">
       </div>
-    <?php } ?>
+    </div>
+    <div class="col-sm-7">
+
+        <ul>
+          <li>
+            <label>演講主題：</label>
+            <span>Steve Jobs 賈伯斯 - 史丹佛大學畢業典禮演說</span>
+          </li>
+          <li>
+            <label>發表時間：</label>
+            <span>1999/6/20</span>
+          </li>
+          <li>
+            <label>標籤：</label>
+            <span>畢業典禮、史丹佛</span>
+          </li>
+          <li>
+            <label>演講摘要：</label>
+            <p>事件起始於當地時間3月18日晚間18時，中國國民黨立法委員張慶忠以30秒之速草率宣布完成 《海峽兩岸服務貿易協議》的委員會審查，而引起一群就讀大學與研究所的學生們反對，並在立法院外舉行「守護民主之夜」晚會，抗議輕率的審查程序；之後有400多名學生趁著警員不備，而進入立法院內靜坐抗議，接著於晚間21時突破警方的封鎖線佔領立法院議場。</p>
+          </li>
+          <li><a href="/ispeech_feature/pages/article.php" class="btn btn-primary btn-font navbar-right reading" role="button">詳細閱讀</a></li>
+        </ul>
+
+    </div>
   </div>
 </div>
+
+<?php } ?>

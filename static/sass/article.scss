@@ -18,7 +18,7 @@ $base-line-height: 24px;
 @import "component/base";
 
 @import "component/header";
-@import "component/search";
+// @import "component/search";
 @import "component/navbar";
 @import "component/slide";
 @import "component/navbar";
@@ -137,8 +137,7 @@ $base-line-height: 24px;
     height: 100%;
 }
 .fixed{
-    position: fixed;
-    top: 100px;
+    position: relative;
 }
 .fb-like-box{
     background-color: #fff;

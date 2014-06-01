@@ -11,12 +11,13 @@ $base-line-height: 24px;
 
 @import "compass/typography/vertical_rhythm";
 @import "compass/reset";
+@import "mixin";
 @import "susy";
 
 @import "component/base";
 
 @import "component/header";
-@import "component/search";
+// @import "component/search";
 @import "component/navbar";
 @import "component/slide";
 @import "component/navbar";

@@ -1,7 +1,9 @@
 <div class="row">
 	<div class="author">
 		<div class="col-sm-5">
-			<img class="img-responsive" height="100%" src="http://ofinksandpapers.files.wordpress.com/2011/10/126933-steve-jobs.jpg" alt="">
+			<div class="author_img">
+				<img class="img-responsive" height="100%" src="http://ofinksandpapers.files.wordpress.com/2011/10/126933-steve-jobs.jpg" alt="">
+			</div>
 		</div>
 		<div class="col-sm-7">
 

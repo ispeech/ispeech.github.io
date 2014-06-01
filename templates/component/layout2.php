@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <title><?=$this->title?></title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-
+        <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
         <!-- <link rel="stylesheet" href="http://kkbruce.tw/Content/bootstrap/css?v=1UgUvHStxOO5lRxIHx24MCHf41ECy2UyYy21xTm0kd41"> -->

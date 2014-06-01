@@ -50,3 +50,11 @@
         line-height:$height - 2;
     }
 }
+
+@mixin border-radius($top:4px, $right:4px, $bottom:4px, $left:4px){
+    -webkit-border-radius: $top $right $bottom $left;
+    -moz-border-radius: $top $right $bottom $left;
+    border-radius: $top $right $bottom $left;
+}
+
+

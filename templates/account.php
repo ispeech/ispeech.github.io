@@ -20,12 +20,5 @@
 <?php $this -> start('javascript') ?>
 <script>
 
-$(window).on({
-	ready: ISPEECH.event.screenWidth,
-	resize: ISPEECH.event.screenWidth,
-	scroll: ISPEECH.event.scrollEvent
-});
-
-$('.sticky-wrapper').waypoint('sticky');
 </script>
 <?php $this -> end() ?>

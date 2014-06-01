@@ -24,8 +24,6 @@
 
 <?php $this -> start('javascript') ?>
 <script>
-ISPEECH.env.fixTop = $('.fix-section').offset().top;
-
-// $('.sticky-wrapper').waypoint('sticky');
+	ISPEECH.env.fixTop = $('.fix-section').offset().top;
 </script>
 <?php $this -> end() ?>

@@ -2,7 +2,7 @@
 <!-- <div class="sticky-wrapper" > -->
 <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-        <a href="/ispeech_feature/pages/nindex.php" class="logo">Is</a>
+        <a href="/ispeech_feature/pages/index.php" class="logo">Is</a>
         <!--mobile tablet-->
         <!-- <div class="navbar-header"> -->
 

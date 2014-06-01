@@ -1,0 +1,24 @@
+/* line 61, ../../../../Downloads/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../Downloads/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 8, ../sass/main.sass */
+html {
+  font-size: 150%;
+  line-height: 1.5em;
+}
+
+/* line 12, ../sass/main.sass */
+h1 {
+  font-size: 1.75em;
+  line-height: 1.71429em;
+  margin-top: 1.5em;
+  margin-bottom: 1.125em;
+}
